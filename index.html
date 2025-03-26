@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Gerenciamento de Caminhões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Caminhões</h1>
+    </header>
+
+    <main>
+        <!-- Seção de Registro de Entrada/Saída -->
+        <section id="registro">
+            <h2>Registro de Caminhões</h2>
+            <form id="form-registro">
+                <label for="placa">Placa do Caminhão:</label>
+                <input type="text" id="placa" name="placa" required>
+
+                <label for="motorista">Nome do Motorista:</label>
+                <input type="text" id="motorista" name="motorista" required>
+
+                <label for="tipo">Tipo de Movimentação:</label>
+                <select id="tipo" name="tipo">
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+
+        <!-- Seção de Monitoramento de Status -->
+        <section id="status">
+            <h2>Status dos Caminhões</h2>
+            <table id="tabela-status">
+                <thead>
+                    <tr>
+                        <th>Placa</th>
+                        <th>Motorista</th>
+                        <th>Status</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados serão inseridos via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Gerenciamento de Caminhões</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
