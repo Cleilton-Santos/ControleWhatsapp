@@ -98,5 +98,5 @@ node testSend.js
 
 ## ✨ Autor
 
-Desenvolvido com 💻 por [Seu Nome Aqui]
+Desenvolvido com 💻 por Cleilton-Santos
 
