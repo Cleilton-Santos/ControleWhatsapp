@@ -22,10 +22,12 @@ console.log('=========================================');
 
 const monitor = new SmartGPSMonitor(CONFIG, DESTINO);
 
+// Inicia imediatamente e depois a cada intervalo
 monitor.monitorar();
-setInterval(() => monitor.monitorar(), CONFIG.INTERVALO_MINUTOS * 60 * 1000);
+const intervalo = setInterval(() => monitor.monitorar(), CONFIG.INTERVALO_MINUTOS * 60 * 1000);
 
 process.on('SIGINT', () => {
+  clearInterval(intervalo);
   console.log('\n🛑 Monitoramento encerrado');
   process.exit(0);
 });
