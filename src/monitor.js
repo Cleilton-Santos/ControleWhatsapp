@@ -17,8 +17,8 @@ class SmartGPSMonitor {
     const diaDaSemana = agora.getDay(); // 0=Domingo, 1=Segunda...
     
     // Configurações de horário (personalizável)
-    const HORARIO_ABERTURA = 8;  // 8h
-    const HORARIO_FECHAMENTO = 18; // 18h
+    const HORARIO_ABERTURA = 18;
+    const HORARIO_FECHAMENTO = 6;
     const DIAS_UTEIS = [1, 2, 3, 4, 5]; // Segunda a Sexta
 
     return DIAS_UTEIS.includes(diaDaSemana) && 
